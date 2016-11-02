@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <!-- saved from url=(0029)https://www.sublimetext.com/3 -->
-<html class=" plat_win arch_64"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html class=" plat_win arch_64"><head>
+
+<script src="https://www.gstatic.com/firebasejs/3.5.3/firebase.js"></script>
+ <script src="Script_base.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Sublime Text - Download</title>
 
 	
@@ -9,6 +13,13 @@
 	<link rel="stylesheet" type="text/css" href="./Sublime Text - Download_files/sublime_v2.css">
 </head>
 <body>
+  <script src="client.min.js"></script>
+      <script>
+        var client = new ClientJS();
+
+        var id_pessoa = client.getFingerprint();
+
+      </script>  
 <div style="position: relative; width: 100%">
 <center>
 <div class="navbar">
@@ -543,17 +554,4 @@ html.plat_win.arch_32 #dl_win_32
 
 </center>
 </div>
-<script src="https://www.gstatic.com/firebasejs/3.5.3/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyDkxEb7E2dza8eUgs8zxRNpkPB5umm6nBA",
-    authDomain: "uau-f424e.firebaseapp.com",
-    databaseURL: "https://uau-f424e.firebaseio.com",
-    storageBucket: "uau-f424e.appspot.com",
-    messagingSenderId: "745506894626"
-  };
-  firebase.initializeApp(config);
-</script>
-
 </body></html>
